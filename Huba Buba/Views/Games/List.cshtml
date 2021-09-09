@@ -1,0 +1,13 @@
+﻿
+<h1>Hotline Miami</h1>
+<h3>@Model.GameCategory</h3>
+<div class="row mt-5 mb-2">
+    @{
+        foreach (Game game in Model.AllGames)
+        {
+            @Html.Partial("AllGames", game)
+        }
+    }
+</div>
+
+
